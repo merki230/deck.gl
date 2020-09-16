@@ -214,5 +214,5 @@ function updateLayers(deck) {
     const layer = new LayerType(deckLayer.props);
     layers.push(layer);
   });
-  deck.setProps({layers});
+  deck.setProps({layers,getCursor: () => "default"});
 }
